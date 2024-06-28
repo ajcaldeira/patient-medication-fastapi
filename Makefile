@@ -8,12 +8,12 @@ help:
 # make pre-commit - run pre-commit hooks
 .PHONY: pre-commit
 pre-commit:
-	pre-commit run --all-files
+	poetry run pre-commit run --all-files
 
 # make run-tests - run tests
 .PHONY: run-tests
 run-tests:
-	python -m pytest
+	poetry run pytest
 
 # make run-me - run the project
 .PHONY: run-me
